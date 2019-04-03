@@ -1,0 +1,15 @@
+package com.tt.app.service.impl;
+
+import java.util.List;
+
+import com.tt.app.service.UserService;
+
+public class UserServiceImpl implements UserService{
+	private UserMapper;
+	
+	@Override
+	public List<?> selectUserList() {
+		return null;
+	}
+
+}

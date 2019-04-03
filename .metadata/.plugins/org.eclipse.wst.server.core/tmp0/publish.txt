@@ -1,0 +1,7 @@
+#Tomcat publish data
+#Fri Mar 01 15:10:06 CST 2019
+org.eclipse.jst.j2ee.server\:taotao-manger-mapper=WEB-INF/lib/taotao-manger-mapper-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\feifan\\.m2\\repository\\org\\springframework\\spring-web\\4.1.3.RELEASE\\spring-web-4.1.3.RELEASE.jar=WEB-INF/lib/spring-web-4.1.3.RELEASE.jar
+org.eclipse.jst.j2ee.server\:taotao-manger-service=WEB-INF/lib/taotao-manger-service-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:taotao-common=WEB-INF/lib/taotao-common-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:taotao-manger-pojo=WEB-INF/lib/taotao-manger-pojo-0.0.1-SNAPSHOT.jar

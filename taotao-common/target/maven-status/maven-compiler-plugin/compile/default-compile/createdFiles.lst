@@ -1,0 +1,5 @@
+com\tt\common\core\DataTablesUtil.class
+com\tt\common\core\GenericMapper.class
+com\tt\common\core\Page.class
+com\tt\common\core\GenericServiceImpl.class
+com\tt\common\core\GenericService.class

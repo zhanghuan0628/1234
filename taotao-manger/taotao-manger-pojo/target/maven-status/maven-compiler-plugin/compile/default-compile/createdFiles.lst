@@ -1,0 +1,7 @@
+com\tt\app\model\TUser.class
+com\tt\app\model\base\BaseTUserExample$Criteria.class
+com\tt\app\model\base\BaseTUserExample.class
+com\tt\app\model\base\BaseTUserExample$Criterion.class
+com\tt\app\model\TUserExample.class
+com\tt\app\model\base\BaseTUserExample$GeneratedCriteria.class
+com\tt\app\model\base\BaseTUser.class

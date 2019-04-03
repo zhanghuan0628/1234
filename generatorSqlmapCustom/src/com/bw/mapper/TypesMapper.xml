@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bw.mapper.GTypesMapper" >
+  <resultMap id="BaseResultMap" type="com.bw.bean.GTypes" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="ptype" property="ptype" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from g_types
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.bw.bean.GTypes" >
+    insert into g_types (id, ptype)
+    values (#{id,jdbcType=INTEGER}, #{ptype,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.bw.bean.GTypes" >
+    update g_types
+    set ptype = #{ptype,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select id, ptype
+    from g_types
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, ptype
+    from g_types
+  </select>
+</mapper>

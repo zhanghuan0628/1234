@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bw.mapper.UsersMapper" >
+  <resultMap id="BaseResultMap" type="com.bw.bean.Users" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="uname" property="uname" jdbcType="VARCHAR" />
+    <result column="loginName" property="loginname" jdbcType="VARCHAR" />
+    <result column="loginPwd" property="loginpwd" jdbcType="VARCHAR" />
+    <result column="utype" property="utype" jdbcType="INTEGER" />
+    <result column="uaddress" property="uaddress" jdbcType="VARCHAR" />
+    <result column="zhye" property="zhye" jdbcType="DOUBLE" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from users
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.bw.bean.Users" >
+    insert into users (id, uname, loginName, 
+      loginPwd, utype, uaddress, 
+      zhye)
+    values (#{id,jdbcType=INTEGER}, #{uname,jdbcType=VARCHAR}, #{loginname,jdbcType=VARCHAR}, 
+      #{loginpwd,jdbcType=VARCHAR}, #{utype,jdbcType=INTEGER}, #{uaddress,jdbcType=VARCHAR}, 
+      #{zhye,jdbcType=DOUBLE})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.bw.bean.Users" >
+    update users
+    set uname = #{uname,jdbcType=VARCHAR},
+      loginName = #{loginname,jdbcType=VARCHAR},
+      loginPwd = #{loginpwd,jdbcType=VARCHAR},
+      utype = #{utype,jdbcType=INTEGER},
+      uaddress = #{uaddress,jdbcType=VARCHAR},
+      zhye = #{zhye,jdbcType=DOUBLE}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select id, uname, loginName, loginPwd, utype, uaddress, zhye
+    from users
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, uname, loginName, loginPwd, utype, uaddress, zhye
+    from users
+  </select>
+</mapper>

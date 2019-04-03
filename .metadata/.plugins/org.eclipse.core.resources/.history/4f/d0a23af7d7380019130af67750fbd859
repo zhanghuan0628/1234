@@ -1,0 +1,10 @@
+package com.tt.app.controller.test;
+
+import org.springframework.stereotype.Controller;
+
+import com.tt.app.service.UserService;
+
+@Controller
+public class TestController {
+	private UserService userService;
+}

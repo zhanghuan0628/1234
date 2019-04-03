@@ -1,0 +1,14 @@
+package com.tt.app.controller.test;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.tt.app.service.TUserService;
+
+@Controller
+@RequestMapping("/TUserController")
+public class TUserController {
+	
+	private TUserService tUserService;
+
+}

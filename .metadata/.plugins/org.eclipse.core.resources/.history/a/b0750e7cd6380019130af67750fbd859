@@ -1,0 +1,7 @@
+package com.tt.app.service.impl;
+
+import com.tt.app.service.UserService;
+
+public class UserServiceImpl implements UserService{
+
+}

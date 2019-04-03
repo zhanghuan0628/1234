@@ -1,0 +1,4 @@
+com\tt\app\service\impl\TUserServiceImpl.class
+com\tt\app\service\TUserService.class
+com\tt\app\interceptor\LogAspect.class
+com\tt\app\interceptor\LogAspect$ServiceThread.class
